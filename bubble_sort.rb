@@ -1,10 +1,9 @@
-array = [12,34,22,42,50]
 # create a method taking an array as its argument
 def bubble_sort(array) #defining the method
     array_length = array.size #create a variable that has the length of the array
     return array if array_length <= 1 #avoid redundance
+    loop do #add a variable to check swapping 
     swapped = false
-    while swapped do #iteration
          #conditional statement & loop
          #iterating throught the array
         (array_length-1).times do |i| #substracting one makes the array works
@@ -16,8 +15,8 @@ def bubble_sort(array) #defining the method
     end
     break if not swapped
   end
+  array
 end
-puts bubble_sort(array)
 
-
-
+unorganized_array = [12,34,22,42,50]
+p bubble_sort unorganized_array
