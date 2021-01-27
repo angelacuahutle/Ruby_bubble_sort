@@ -24,17 +24,17 @@ unorganized_array = [12, 34, 22, 42, 50]
 p bubble_sort unorganized_array
 
 def bubble_sort_by(array)
-  array_length = array.length
+ array_length = array.length
   if array.length <= 1
     array
   else
     loop do
-      swaped = false
+      swapped = false
       i = 0
       while i < (array.length - 1)
         yield_sort = yield(array[i], array[i + 1])
         p yield_sort
-        if yield_sort > 0
+        if yield_sort.positive?
           array[i], array[i + 1] = array[i + 1], array[i]
           swapped = true
         end
@@ -49,4 +49,4 @@ end
 bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
-%w['hi', 'hey', 'hello']
+=>['hi', 'hey', 'hello']
