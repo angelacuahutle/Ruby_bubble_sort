@@ -10,9 +10,10 @@ In this project, We implemented the bubble sort algorithm.
 [Live Demo]
 
 ## Getting Started
-clone the repository $ git clone https://github.com/angelacuahutle/Ruby_bubble_sort.git
-go to the project directory $ cd bubble_sort
-Run the command $ ruby bubble_sort.rb 
+
+-Clone the repository $ git clone https://github.com/angelacuahutle/Ruby_bubble_sort.git
+-Go to the project directory $ cd bubble_sort
+-Run the command $ ruby bubble_sort.rb 
 
 
 To get a local copy up and running follow these simple example steps.

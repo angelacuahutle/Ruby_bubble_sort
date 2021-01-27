@@ -24,7 +24,7 @@ unorganized_array = [12, 34, 22, 42, 50]
 p bubble_sort unorganized_array
 
 def bubble_sort_by(array)
-  array_length = array.length
+  arraylength = array.length
   if array.length <= 1
     array
   else
