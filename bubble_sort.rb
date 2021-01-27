@@ -11,7 +11,7 @@ def bubble_sort(array)
     (array_length - 1).times do |i| # substracting one makes the array works
       next unless array[i] > array[i + 1]
 
-      array[i], array[i + 1] = array[i + 1], array[iarray]
+      array[i], array[i + 1] = array[i + 1], array[i]
       swapped = true # use if statement that verify values [i] and [i+1]
       # and swap if value [i]>[i+1]
     end
@@ -20,26 +20,32 @@ def bubble_sort(array)
   array
 end
 
-
 unorganized_array = [12, 34, 22, 42, 50]
 p bubble_sort unorganized_array
 
+
 def bubble_sort_by (array)
-  unsorted = true
+  # unsorted = true
  array_length = array.length
  if array.length <= 1
- else loop do
-   swaped= false
-    while i < (array.length - 1)
-      if yield (array[i], array[i + 1])
-       array[i], array[i + 1] = array[i + 1], array[i]
-       swapped = true
-     end 
-    end 
-   break unless swapped
+  array
+ else 
+    loop do
+      swaped = false
+      i = 0
+      while i < (array.length - 1)
+        chioma = yield(array[i], array[i + 1])
+        p chioma
+        if chioma > 0
+          array[i], array[i + 1] = array[i + 1], array[i]
+          swapped = true
+        end
+        i += 1
+      end 
+     break unless swapped
+    end
   end
- end 
- p array
+p array
 end
 
 bubble_sort_by(["hi","hello","hey"]) do |left,right| 
