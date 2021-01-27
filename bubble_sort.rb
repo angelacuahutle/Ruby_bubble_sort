@@ -24,8 +24,8 @@ unorganized_array = [12, 34, 22, 42, 50]
 p bubble_sort unorganized_array
 
 
-def bubble_sort_by (array)
-  # unsorted = true
+def bubble_sort_by(array)
+  unsorted = true
  array_length = array.length
  if array.length <= 1
   array
@@ -34,9 +34,9 @@ def bubble_sort_by (array)
       swaped = false
       i = 0
       while i < (array.length - 1)
-        chioma = yield(array[i], array[i + 1])
-        p chioma
-        if chioma > 0
+        yield_sort = yield(array[i], array[i + 1])
+        p yield_sort
+        if yield_sort > 0
           array[i], array[i + 1] = array[i + 1], array[i]
           swapped = true
         end
