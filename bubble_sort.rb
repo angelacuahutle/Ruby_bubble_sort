@@ -31,14 +31,15 @@ def bubble_sort_by (array)
  else loop do
    swaped= false
     while i < (array.length - 1)
-      yield (array [i], array [i + 1])
+      if yield (array [i], array [i + 1])
        array[i], array[i + 1] = array[i + 1], array[i]
        swapped = true
      end 
     end 
    break unless swapped
   end
- end print array
+ end 
+ p array
 end 
 
 
