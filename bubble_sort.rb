@@ -25,7 +25,7 @@ p bubble_sort unorganized_array
 
 def bubble_sort_by(array)
   array_length = array.length
- if array.length <= 1
+  if array.length <= 1
     array
   else
     loop do
@@ -43,7 +43,7 @@ def bubble_sort_by(array)
       break unless swapped
     end
   end
- p array
+  p array
 end
 
 bubble_sort_by(%w[hi hello hey]) do |left, right|
