@@ -25,9 +25,9 @@ p bubble_sort unorganized_array
 
 def bubble_sort_by(array)
   array_length = array.length
-   if array.length <= 1
+  if array.length <= 1
     array
-   else
+  else
     loop do
       swapped = false
       i = 0
